@@ -22,5 +22,13 @@ Follow the debugging guide and watch out for the logs as they will let you know 
         Android: Connect device to system -> Enable debugging -> react-native run-android --deviceId XYX(using adb device to get list of deviceId's)
         iOS: Conect device to system -> Enable debugging -> react-native run-ios --device “Device name”(check for deviceName in your device settings)
         
-     Open debugging menu from cmd line without shaking gesture
-           
+    Open debugging menu from cmd line without shaking gesture for a connected device:
+        Android: adb shell input keyevent 82
+        iOS: https://apple.stackexchange.com/a/143079(Haven't tried this though)
+    
+    To reload the app on connected device from terminal:
+        Android: adb shell input text “RR” -
+        iOS: 
+
+    
+    
